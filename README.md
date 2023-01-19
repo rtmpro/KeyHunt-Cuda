@@ -1,3 +1,18 @@
+这里不需要二进制数据而不是文本数据，因此您需要对文件运行addresses_to_hash160.py以将其转换为二进制（.bin）。
+
+在Windows中，这是一种痛苦。
+但是在Linux中，它只有几个命令行（没有编程）
+
+1- sudo apt install build-essential git libgmp-dev python3-pip nano -y
+2- git clone https://github.com/kanhavishva/KeyHunt-Cuda
+3- cd KeyHunt-Cuda/KeyHunt-Cuda/4- nano Makefile（转到“CUDA = /usr/local/cuda-11.0”行并将其更改为您的cuda版本，例如“CUDA = /usr/local/
+cuda-11.2”
+5- make gpu=1 CCAP=21 all
+
+你准备好了./KeyHunt....
+
+我真的知道它看起来太难了，但你应该慢慢来，周月没问题.
+你可以用 https://vast.ai/console/ 租便宜的几个小时，并开始了解更多关于Linux和KeyHunt-Cuda的信息（选择docker镜像“nvidia/cuda：11.2.0-devel-ubuntu18.04”）
 # KeyHunt-Cuda 
 _Hunt for Bitcoin private keys._
 
